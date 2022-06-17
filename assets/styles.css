@@ -51,17 +51,17 @@ section h1{
     color: black;
 }
 section:nth-of-type(1){
-    background-image: url(/img/maldives-g800da8716_1920.jpg);
+    background-image: url(/assets/img/maldives-g800da8716_1920.jpg);
 }
 section:nth-of-type(2){
-    background-image: url(/img/sobre\ nos.jpg);
+    background-image: url(/assets/img/sobre\ nos.jpg);
 }
 section:nth-of-type(3){
-    background-image: url(/img/wyoming-gf48d92b03_1920.jpg);
+    background-image: url(/assets/img/wyoming-gf48d92b03_1920.jpg);
 }
 section:nth-of-type(4){
     background-color: black;
 }
 section:nth-of-type(5){
-    background-image: url(/img/nature-g76edaf068_1920.jpg)
+    background-image: url(/assets/img/nature-g76edaf068_1920.jpg)
 }
