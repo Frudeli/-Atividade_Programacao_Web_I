@@ -124,7 +124,7 @@ html {
 
 #sessao5 {
     width: 100%;
-    height: 800px;
+
     /* min-height: 100vh; */
 
     
@@ -133,4 +133,7 @@ html {
     background-size: cover;
     margin: 50px;
     
+}
+#edition {
+    color: white;
 }
