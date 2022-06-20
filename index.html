@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="fotos-do-grupo/fotos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="animate.js">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
     <title>Ideia de Site</title>
 </head>
 <body>
@@ -46,17 +50,17 @@
        <h2>Veja as vantagens de se contratar os nossos serviços</h2>
        <h2>Dentro dos nossos pacotes de viagens temos: </h2>
        <div class="col-12 d-flex justify-content-center">
-        <div class="col-10  col-6 pm" >
-       <!-- <div class="u-list u-list-1"> -->
+        <div class="col-10  col-6 pm">
+       <div class="u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div class="u-align-left u-container-style u-grey-80 u-list-item u-opacity u-opacity-55 u-repeater-item u-shape-rectangle u-list-item-1">
             <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-              <div class="u-align-center u-container-style u-group u-palette-2-base u-radius-50 u-shape-round u-group-1 animated fadeInLeft-played" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-direction="Left" style="will-change: transform, opacity; animation-duration: 1000ms;">
+              <div class="u-align-center u-container-style u-group u-palette-2-base u-radius-50 u-shape-round u-group-1 animated  made fadeInLeft-played" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-direction="Left" style="will-change: transform, opacity; animation-duration: 1000ms;">
                 <div class="u-container-layout u-valign-middle u-container-layout-2">
                   <h1 class="u-custom-font u-text u-text-1">01</h1>
                 </div>
               </div>
-              <h5 class="u-text u-text-body-alt-color u-text-2 animated fadeInRight-played" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-direction="Right" style="will-change: transform, opacity; animation-duration: 1000ms;">Accommodation</h5>
+              <h5 class="u-text u-text-body-alt-color u-text-2 animated fadeInRight-played" data-animation-name="fadeIn">Accommodation</h5>
               <p class="u-text u-text-grey-30 u-text-3">Hospedagem</p>
               <a href="" class="u-active-none u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-button-style u-hover-none u-none u-text-body-alt-color u-text-hover-grey-30 u-btn-1"></a>
             <img src="/fotos-do-grupo/img/COMO-ESCOLHER-UMA-HOSPEDAGEM-2.png" alt="" height="150px">
@@ -192,5 +196,17 @@
 
 <script>
   
+  const observer = new IntersectionObserver(entries => {
+    console.log(entries);
+
+    entries[0].target.classList.add('.animated-off');
+})
+
+// escrever no console entries cada vez que movimentar o scroll pelo elemento
+
+Array.from(document.querySelectorAll('.animated')).forEach(element => {
+    observer.observe(document.querySelector('.animated'))
+})
+
 </script>
 </html> 
