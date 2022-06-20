@@ -2,9 +2,13 @@
 const observer = new IntersectionObserver(entries => {
     console.log(entries);
 
+
+    if(entries[0].intersectionRatio >= 1) {
+        entries[0].target.classList.add('animated-off')
+    }
     entries[0].target.classList.add('.animated-off');
 }, {
-    threshold: [0, 5, 1]
+    threshold: [0, 100, 1]
 
     
 })
@@ -14,5 +18,9 @@ const observer = new IntersectionObserver(entries => {
 Array.from(document.querySelectorAll('.animated')).forEach(element => {
     observer.observe(document.querySelector('.animated'))
 })
+
+
+
+    
 
 
