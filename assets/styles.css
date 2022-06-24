@@ -1,80 +1,70 @@
-*{
+/* serviços */
 
-    padding: 0%;
-    margin: 0%;
-    
-    box-sizing: border-box;
-    font-family: "Open Sans";
 
-}
-
-nav{
-    width: 100%;
-    position: fixed;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+#services .services {
+    flex-direction: column;
     text-align: center;
-    position: fixed;
-
-
-}
-nav ul li{
-    display: inline-block;
-}
-
-nav ul li a{
-    text-decoration: none;
-    padding: 5px 0;
-    display: inline-block;
-    margin: 15px 10px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-bottom:  3px solid transparent;
-    transition: all 0.25s ease-in-out;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
     
 }
 
-nav ul li a:hover{
-    border-bottom: 3px solid yellow;
-    text-decoration: none;
-    color: aqua;
-}
-
-
-#sessao1, #sessao2, #sessao3, #sessao6{
-    width: 110%;
-    
-    
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-}
- 
-
-
-section h1{
-    font-size: 70px;
+/* ;; rem ("root em") é o tamanho de fonte do elemento-raiz do documento. Diferentemente do em , que pode ser diferente para cada elemento, o rem é constante em todo o documento.  */
+#services .section-title {
+    font-size: 4rem;
+    font-weight: 300;
     color: black;
-}
-section:nth-of-type(1){
-    background-image: url(/assets/img/maldives-g800da8716_1920.jpg);
-}
-section:nth-of-type(2){
-    background-image: url(/assets/img/sobre\ nos.jpg);
-}
-section:nth-of-type(3){
-    background-image: url(/assets/img/wyoming-gf48d92b03_1920.jpg);
-}
-section:nth-of-type(4){
-    background-image: white;
+    margin-bottom: 10px;
+    letter-spacing: 2.rem;
+    text-align: center;
 }
 
-section:nth-of-type(5){
+#services .section-title span {
+
+    color: blue;
+}
+#services .service-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+
+}
+
+#service .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#services .service-item{
+    flex-basis: 80%;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(4, 169, 245);
+    background-size: cover;
+    margin: 10px 5%;
+
+    
+}
+
+
+/* #services .service-item::after{
+
+    content: '';
+    position: absolute;
+    left: 0em;
+    height: 100%;
+    width: 25%;
     background-color: black;
-}
-section:nth-of-type(6){
-    background-image: url(/assets/img/nature-g76edaf068_1920.jpg);
-}
+    opacity: .6;
+
+} */
