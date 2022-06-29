@@ -1,13 +1,16 @@
 /* serviços */
-
-<<<<<<< HEAD
-    /* padding: 0%;
+*{
+  /* padding: 0%;
     margin: 0%; */
     
     box-sizing: border-box;
     font-family: "Open Sans";
 
 }
+
+  
+
+
 
 nav{
     width: 100%;
@@ -72,7 +75,7 @@ section:nth-of-type(3){
 }
 section:nth-of-type(4){
     background-image: white;
-=======
+}
 
 #services .services {
     flex-direction: column;
@@ -91,14 +94,13 @@ section:nth-of-type(4){
     margin-bottom: 10px;
     letter-spacing: 2.rem;
     text-align: center;
->>>>>>> ce210f163872ca9e334c7b2726db6a50b564f82a
 }
 
 #services .section-title span {
 
     color: blue;
 }
-<<<<<<< HEAD
+
 section:nth-of-type(6){
     background-image: linear-gradient(blue, green, yellow);
 }
@@ -177,8 +179,7 @@ section:nth-of-type(7){
 
     color: blue;
 }
-=======
->>>>>>> ce210f163872ca9e334c7b2726db6a50b564f82a
+
 #services .service-top p {
     font-size: 1.4rem;
     margin-top: 5px;
@@ -369,6 +370,6 @@ button:hover{
     background-color: rgb(14, 86, 14);
 }
 
-=======
-} */
->>>>>>> ce210f163872ca9e334c7b2726db6a50b564f82a
+
+
+
